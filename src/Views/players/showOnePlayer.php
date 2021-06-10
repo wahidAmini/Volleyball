@@ -21,12 +21,12 @@
             </tr>
         </thead>
         <tbody>
-            <?php foreach ($players as $player) : ?>
+            <?php foreach ($player as $one) : ?>
             <tr>
-                <td><?= $player->id ?></td> 
-                <td><?= $player->name ?></td>
-                <td><?= $player->age ?></td>
-                <td><?= $player->team ?></td>
+                <td><?= $one->id ?></td> 
+                <td><?= $one->name ?></td>
+                <td><?= $one->age ?></td>
+                <td><?= $one->team ?></td>
             </tr>
             <?php endforeach; ?>
         </tbody>

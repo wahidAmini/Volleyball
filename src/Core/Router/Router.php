@@ -75,7 +75,7 @@ class Router
                 // new Controller\AnimalController()
                 $controller = new $controllerName();
                 // $controller->show(...$params)
-                $controller->$action(...$params);
+                $controller->$action($this->request, ...$params);
 
                 return;
             }

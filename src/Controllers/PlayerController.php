@@ -14,17 +14,18 @@ class PlayerController
         new View('players/index', compact("players"));
     }
 
-    /*
+    
     public function show($request, $id)
     {
-        $animal = Animal::getById($id);
-
-        var_dump($animal);
+        $player = Player::getById($id);
+        new View('players/showOnePlayer', compact("player"));
+        //var_dump($player);
     }
 
     public function create($request)
     {
         var_dump($request->getBody());
+       // new View('players/addPlayer', compact("players"));
     }
-    */
+    
 }

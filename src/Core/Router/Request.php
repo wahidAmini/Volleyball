@@ -8,10 +8,13 @@ class Request
 
     private string $uri;
 
+    private array $form = [];
+
     public function __construct()
     {
         $this->method = $_SERVER['REQUEST_METHOD'];
         $this->uri = rtrim($_SERVER['REQUEST_URI'], '/');
+        $this->form = $_POST;
     }
 
     public function getMethod()
@@ -22,5 +25,10 @@ class Request
     public function getUri()
     {
         return $this->uri;
+    }
+
+    public function getForm()
+    {
+        return $this->form;
     }
 }
