@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>players</title>
 </head>
 
 <body>
-    <h1>Liste des animaux</h1>
+    <h1>Liste des players</h1>
     <ul>
-        <?php foreach ($animals as $animal) : ?>
-            <li><?= $animal->name ?></li>
+        <?php foreach ($players as $player) : ?>
+            <li><?= $player->name ?></li>
         <?php endforeach; ?>
     </ul>
 </body>

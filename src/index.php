@@ -1,6 +1,6 @@
 <?php
 
-use Controllers\AnimalController;
+use Controllers\PlayerController;
 use Core\Router\Request;
 use Core\Router\Router;
 
@@ -9,7 +9,8 @@ require 'routes.php';
 
 /* $router = new Router();
 $router->run(); */
-echo "hello l'Scorpion !";
+echo "<h2>Hello Heros !</h2>";
 
 // $controller = new AnimalController();
-// $controller->index();
+$controller = new PlayerController();
+$controller->index();
