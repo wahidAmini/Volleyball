@@ -25,7 +25,11 @@
             <tr>
                 <td><?= $team->id ?></td> 
                 <td><?= $team->name ?></td>
-                <td><a href="/teams/<?= $team->id ?>/delete" class="btn btn-danger">Delete</a> </td>
+                <td>
+                    <form action="/teams/<?= $team->id ?>/delete" method="post">
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                    </form>
+                </td>
                 <td><a href="/teams/<?= $team->id ?>/edit" class="btn btn-success">Update</a> </td>
             </tr>
             

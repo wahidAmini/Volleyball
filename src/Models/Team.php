@@ -32,8 +32,8 @@ class Team
         $sql->execute([...$data, $id]);
     }
     
-    public function delete($id){
-        $sql = DB::prepare(('DELETE FROM teams WHERE id = ?'));
-        $sql->execute($id);
+    public static function delete($id){
+        $sql = DB::prepare(('DELETE FROM teams WHERE id = :id'));
+        $sql->execute([':id' => $id]);
     }
 }

@@ -29,7 +29,11 @@
                 <td><?= $player->name ?></td>
                 <td><?= $player->age ?></td>
                 <td><?= $player->team ?></td>
-                <td><a href="/players/{'<?= $player->id ?>'}/delete" class="btn btn-danger">Delete</a> </td>
+                <td>
+                    <form action="/players/<?= $player->id ?>/delete" method="post">
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                    </form>
+                </td>
                 <td><a href="/players/update" class="btn btn-success">Update</a> </td>
             </tr>
             

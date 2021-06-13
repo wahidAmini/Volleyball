@@ -41,7 +41,7 @@ class TeamController
     }
 
     public function delete($request, $id){
-       // var_dump('hahah');
+        //var_dump($request);
        Team::delete($id);
     }
     
