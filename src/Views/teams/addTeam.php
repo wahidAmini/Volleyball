@@ -5,24 +5,14 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
+   <title>adding new team</title>
 </head>
 <body class="container">
-   <h2 class="text-center mt-5">Creeating a new player </h2>
+   <h2 class="text-center mt-5">Adding new team </h2>
    <form action="" method="post">
       <div class="mb-3">
-         <label class="form-label">Name</label>
-         <input type="text" name="name" class="form-control" placeholder="name ..">
-      </div>
-      <div class="mb-3">
-         <label class="form-label">Age </label>
-         <input type="number" name="age" class="form-control" placeholder="age ..">
-      </div>
-      <div class="mb-3">
-         <select class="form-select" name="team">
-            <option value="1">Team-A</option>
-            <option value="2">Team-B</option>
-         </select>
+         <label class="form-label">Team Name</label>
+         <input type="text" name="name" class="form-control" placeholder="inset team name ..">
       </div>
       <button type="submit" class="btn btn-primary">Submit</button>
    </form>

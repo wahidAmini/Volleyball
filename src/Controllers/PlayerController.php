@@ -24,8 +24,16 @@ class PlayerController
 
     public function create($request)
     {
-        var_dump($request->getBody());
-       // new View('players/addPlayer', compact("players"));
+        //var_dump($request->getBody());
+        new View('players/addPlayer', $request->getForm());
+    }
+
+    public function insert($request){
+        Player::create($request->getForm());
+    }
+
+    public function delete($request, $id){
+        Player::delete($id);
     }
     
 }

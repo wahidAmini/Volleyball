@@ -34,11 +34,15 @@ class Router
         self::$routes['GET'][] = compact("uri", "controller");
     }
 
+    public static function post($uri, $controller)
+    {
+        self::$routes['POST'][] = compact("uri", "controller");
+    }
+
     public function run()
     {
         if (array_key_exists($this->request->getMethod(), self::$routes)) {
             $this->handleRoute(self::$routes[$this->request->getMethod()]);
-
             return;
         }
 

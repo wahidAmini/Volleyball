@@ -17,14 +17,32 @@ class TeamController
     /*
     public function show($request, $id)
     {
-        $animal = Animal::getById($id);
+        $team = Team::getById($id);
 
-        var_dump($animal);
-    }
-
-    public function create($request)
-    {
-        var_dump($request->getBody());
+        var_dump($team);
     }
     */
+    public function create($request)
+    {
+        new View('teams/addTeam', $request->getForm());
+    }
+
+    public function insert($request){
+        Team::create($request->getForm());
+    }
+
+    public function edit($request, $id)
+    {
+        new View('teams/editTeam', $request->getForm());
+    }
+
+    public function update($request, $id){
+        Team::update($request->getForm());
+    }
+
+    public function delete($request, $id){
+       // var_dump('hahah');
+       Team::delete($id);
+    }
+    
 }
