@@ -34,7 +34,7 @@
                         <button type="submit" class="btn btn-danger">Delete</button>
                     </form>
                 </td>
-                <td><a href="/players/update" class="btn btn-success">Update</a> </td>
+                <td><a href="/players/<?= $player->id ?>/edit" class="btn btn-success">Update</a> </td>
             </tr>
             
             <?php endforeach; ?>

@@ -30,6 +30,16 @@ class PlayerController
 
     public function insert($request){
         Player::create($request->getForm());
+
+        header('loaction: /players');
+    }
+
+    public function edit($request, $id){
+        new View('players/updatePlayer', $request->getForm());
+    }
+
+    public function update($request, $id){
+        Player::update($request->getForm());
     }
 
     public function delete($request, $id){

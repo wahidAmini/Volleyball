@@ -10,9 +10,17 @@
 </head>
 
 <body class="container">
-    <h1 class="text-center">Updating a team</h1>
-    <a href="/teams" class="btn btn-secondary">Back</a>
-    <form action="/teams/<?= $team->id ?>/update" method="post">
+    <h1 class="text-center">Updating a player</h1>
+    <a href="/players" class="btn btn-secondary">Back</a>
+    <form action="/players/<?= $player->id ?>/update" method="post">
+      <div class="mb-3">
+        <label for="inputName" class="form-label"> Name </label>
+        <input type="text" class="form-control" name="name">
+      </div>
+      <div class="mb-3">
+        <label for="inputName" class="form-label">Age </label>
+        <input type="number" class="form-control" name="age">
+      </div>
       <div class="mb-3">
         <label for="inputName" class="form-label">Team Name </label>
         <input type="text" class="form-control" name="name">
@@ -24,10 +32,3 @@
 </body>
 
 </html>
-
-
-
-
-
-
-

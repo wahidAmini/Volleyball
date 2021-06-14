@@ -25,6 +25,9 @@ Route::get('/players/{id}', [PlayerController::class, 'show']);
 Route::get('/players/create', [PlayerController::class, 'create']);
 Route::post('/players/create', [PlayerController::class, 'insert']);
 
+Route::get('/players/{id}/edit', [PlayerController::class, 'edit']);
+Route::post('/players/{id}/edit', [PlayerController::class, 'update']);
+
 Route::post('/players/{id}/delete', [PlayerController::class, 'delete']);
 
 
